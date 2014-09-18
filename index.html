@@ -23,6 +23,10 @@
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	
+        <link rel="stylesheet" href="http://yandex.st/highlightjs/8.2/styles/tomorrow.min.css" />
+        <script src="http://yandex.st/highlightjs/8.2/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
 
 </head>
 <body>
@@ -64,6 +68,18 @@
             <hr />
             <h3>Средний уровень</h3>
             <ul class="circle">
+            	<li>
+            		Что вернет следующий код:
+            		<pre>
+            			<code class="ruby">
+            				puts User.first.class
+            				puts User.all.class
+            				
+            				puts User.find(42).class
+            				puts User.where(:id => 42).class
+            			</code>
+            		</pre>
+            	</li>
                 <li>Что такое ActiveRecord Relation? Как и для чего используется? Приведите примеры негативных последствий его использования</li>
             </ul>
         </div>
